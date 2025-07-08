@@ -1,0 +1,14 @@
+{
+  "target_column": "emissions_source",
+  "feature_columns": [
+    "property_name",
+    "scopes",
+    "class",
+    "emissions",
+    "is_correction",
+    "correction_amount",
+    "emissions_original"
+  ],
+  "total_samples": 101761,
+  "created_at": "2025-07-08T19:33:09.126601"
+}

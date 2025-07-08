@@ -1,0 +1,9 @@
+{
+  "total_entities": 2,
+  "successfully_cleaned": 2,
+  "successfully_engineered": 2,
+  "ml_ready": 2,
+  "validation_passed": 2,
+  "total_validation_errors": 0,
+  "total_validation_warnings": 0
+}

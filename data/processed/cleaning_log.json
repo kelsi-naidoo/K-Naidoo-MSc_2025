@@ -1,0 +1,54 @@
+[
+  {
+    "entity": "EntityA",
+    "timestamp": "2025-06-17T18:56:59.166488",
+    "original_shape": [
+      142585,
+      7
+    ],
+    "cleaned_shape": [
+      0,
+      8
+    ],
+    "operations": [
+      "Standardized 7 column names",
+      "Removed 0 completely empty rows",
+      "Reduced missing values from 0 to 0",
+      "Removed 142585 rows with invalid dates in fiscalyear",
+      "Standardized date format for fiscalyear",
+      "Standardized emissions data for emissions_source",
+      "Standardized emissions data for emissions",
+      "Standardized and encoded sector data for sector",
+      "No duplicate rows found",
+      "Sorted by fiscalyear",
+      "No missing values remain",
+      "Found 3 numeric columns"
+    ]
+  },
+  {
+    "entity": "EntityB",
+    "timestamp": "2025-06-17T18:56:59.330681",
+    "original_shape": [
+      109265,
+      8
+    ],
+    "cleaned_shape": [
+      0,
+      9
+    ],
+    "operations": [
+      "Standardized 8 column names",
+      "Removed 0 completely empty rows",
+      "Reduced missing values from 0 to 0",
+      "Removed 109265 rows with invalid dates in fiscalyear",
+      "Standardized date format for fiscalyear",
+      "Standardized emissions data for emissions_source",
+      "Standardized emissions data for emissions",
+      "Standardized and encoded sector data for primary_category",
+      "No duplicate rows found",
+      "Sorted by fiscalyear",
+      "No missing values remain",
+      "Found 3 numeric columns"
+    ]
+  }
+]

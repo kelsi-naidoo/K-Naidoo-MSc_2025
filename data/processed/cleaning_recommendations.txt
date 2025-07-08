@@ -1,0 +1,11 @@
+Data Cleaning Recommendations
+==================================================
+
+• EntityA: Handle missing values in ['FiscalYear']
+• EntityA: Standardize date format in ['FiscalYear']
+• EntityA: Validate emissions data in ['Emissions Source', 'Emissions']
+• EntityA: Standardize sector categories in ['Sector']
+• EntityB: Handle missing values in ['FiscalYear']
+• EntityB: Standardize date format in ['FiscalYear']
+• EntityB: Validate emissions data in ['Emissions Source', 'Emissions']
+• EntityB: Standardize sector categories in ['Primary Category']

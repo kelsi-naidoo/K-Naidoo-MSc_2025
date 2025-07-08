@@ -1,0 +1,3 @@
+Entity,Total_Rows,Total_Columns,Missing_Values,Missing_Percent,Date_Columns,Sector_Columns,Emissions_Columns
+EntityA,142585,7,142585,14.3%,1,1,2
+EntityB,109265,8,109265,12.5%,1,1,2
