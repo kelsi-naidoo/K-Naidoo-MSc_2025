@@ -1,0 +1,13 @@
+entity,model,anomaly_count,anomaly_percentage,total_samples
+EntityA,isolation_forest,93,0.09139330568603943,101758
+EntityA,lof,102,0.10023781913952712,101758
+EntityA,elliptic_envelope,102,0.10023781913952712,101758
+EntityA,pyod_iforest,0,0.0,101758
+EntityA,pyod_lof,0,0.0,101758
+EntityA,cblof,0,0.0,101758
+EntityB,isolation_forest,63,0.09541984732824427,66024
+EntityB,lof,67,0.10147825033321217,66024
+EntityB,elliptic_envelope,67,0.10147825033321217,66024
+EntityB,pyod_iforest,0,0.0,66024
+EntityB,pyod_lof,0,0.0,66024
+EntityB,cblof,0,0.0,66024
