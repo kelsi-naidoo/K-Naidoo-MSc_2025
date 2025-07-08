@@ -1,4 +1,4 @@
-# Carbon Emissions Forecasting System v3.0
+# GCX PATH: Carbon Emissions Forecasting System v3.0
 
 ## Project Overview
 AI-powered carbon emissions forecasting system for real estate sustainability data analysis. This system implements multiple machine learning models (ARIMA, LSTM, Regression, XGBoost) with comprehensive performance analysis, computational cost monitoring, and sector-based scenario testing for decarbonization planning aligned with SBTi targets.
