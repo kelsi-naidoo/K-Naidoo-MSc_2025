@@ -1,0 +1,94 @@
+{
+    "project": {
+        "name": "Carbon Emissions Forecasting System v3.0",
+        "version": "3.0.0",
+        "author": "Kelsi Naidoo",
+        "institution": "University of Cape Town"
+    },
+    "data": {
+        "raw_dir": "data/raw",
+        "processed_dir": "data/processed",
+        "sandbox_dir": "data/sandbox",
+        "entities": ["EntityA", "EntityB"],
+        "file_patterns": {
+            "emissions": "Emissions_*.xlsx"
+        }
+    },
+    "models": {
+        "forecast_steps": 12,
+        "test_size": 0.2,
+        "validation_size": 0.1,
+        "random_state": 42,
+        "models_config": {
+            "arima": {
+                "order": [1, 1, 1],
+                "seasonal_order": [1, 1, 1, 12],
+                "auto_arima": true
+            },
+            "lstm": {
+                "sequence_length": 12,
+                "epochs": 100,
+                "batch_size": 32,
+                "units": 50,
+                "dropout": 0.2,
+                "early_stopping": true,
+                "patience": 10
+            },
+            "regression": {
+                "polynomial_degree": 2,
+                "include_seasonality": true
+            },
+            "xgboost": {
+                "n_estimators": 100,
+                "max_depth": 6,
+                "learning_rate": 0.1,
+                "subsample": 0.8
+            }
+        }
+    },
+    "evaluation": {
+        "metrics": ["rmse", "mae", "r2", "mape"],
+        "cross_validation_folds": 5,
+        "confidence_intervals": true,
+        "bootstrap_samples": 1000
+    },
+    "dashboard": {
+        "title": "Carbon Emissions Forecasting Dashboard",
+        "theme": "light",
+        "page_config": {
+            "page_title": "Carbon AI v3.0",
+            "page_icon": "🌱",
+            "layout": "wide"
+        }
+    },
+    "reports": {
+        "output_dir": "reports",
+        "figures_dir": "reports/figures",
+        "tables_dir": "reports/tables",
+        "formats": ["pdf", "png", "html"],
+        "dpi": 300
+    },
+    "logging": {
+        "level": "INFO",
+        "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        "file": "reports/logs/app.log"
+    },
+    "ethical": {
+        "anonymization": true,
+        "bias_detection": true,
+        "fairness_metrics": ["statistical_parity", "equalized_odds"],
+        "sandbox_mode": true
+    },
+    "sbti": {
+        "target_year": 2050,
+        "reduction_targets": {
+            "scope1": 0.9,
+            "scope2": 0.9,
+            "scope3": 0.9
+        },
+        "intermediate_targets": {
+            "2030": 0.45,
+            "2040": 0.67
+        }
+    }
+} 
