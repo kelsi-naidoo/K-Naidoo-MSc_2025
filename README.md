@@ -12,34 +12,34 @@ AI-powered carbon emissions forecasting system for real estate sustainability da
 ## Project Objectives
 1. Develop an AI-powered system to forecast carbon emissions using real estate sustainability data
 2. Compare performance of various ML models (ARIMA, LSTM, Regression, XGBoost)
-3. **NEW**: Implement comprehensive performance analysis and computational cost monitoring
-4. **NEW**: Create intuitive Streamlit dashboard for data analysis and visualization
+3. Implement comprehensive performance analysis and computational cost monitoring
+4. Create intuitive Streamlit dashboard for data analysis and visualization
 5. Enable sector scenario testing for decarbonization planning aligned with SBTi targets
 6. Evaluate model performance using RMSE, MAE, and R² metrics
 7. Maintain ethical compliance through sandbox testing and anonymized datasets
 
 ## Key Features
 
-### 🚀 Performance Analysis & Cost Monitoring
+### Performance Analysis & Cost Monitoring
 - **Real-time resource tracking**: CPU, memory, and execution time monitoring
 - **Comparative analysis**: Side-by-side performance comparison of all models
 - **Cost efficiency metrics**: Computational cost vs. accuracy trade-offs
 - **Scalability assessment**: Performance analysis across different dataset sizes
 - **Resource optimization**: Recommendations for model selection based on constraints
 
-### 📊 Model Performance Metrics
+### Model Performance Metrics
 - **Accuracy metrics**: RMSE, MAE, R² for prediction quality
 - **Computational metrics**: Execution time, peak memory, CPU usage
 - **Efficiency scores**: Combined accuracy and computational efficiency
 - **Cost analysis**: Memory-seconds, CPU-seconds, total computational cost
 
-### 🎯 Smart Model Selection
+### Smart Model Selection
 - **Speed-optimized**: Fastest models for real-time applications
 - **Memory-optimized**: Models for resource-constrained environments
 - **CPU-optimized**: Models for CPU-limited systems
 - **Balanced**: Optimal trade-off between accuracy and computational cost
 
-### 🌱 Streamlit Dashboard
+### Streamlit Dashboard
 - **Interactive data upload**: Real-time file validation and preview
 - **Pre-loaded entities**: Entity A and B data ready for analysis
 - **Data visualization**: Interactive charts and time series plots
@@ -107,7 +107,7 @@ carbon_ai_v3/
 
 ## Usage
 
-### 🌱 Streamlit Dashboard (NEW!)
+### Streamlit Dashboard
 **Launch the interactive dashboard:**
 ```bash
 # Option 1: Use the launch script (recommended)
@@ -125,10 +125,10 @@ streamlit run app.py --server.port 8501
 - **Browser**: Any modern web browser
 
 **Dashboard Features:**
-- 📁 **Data Upload**: Upload new data and view pre-loaded entities
-- 📊 **Data Overview**: Interactive data exploration and visualization
-- 🤖 **Model Performance**: Compare forecasting model accuracy
-- 📈 **Performance Analysis**: Computational cost analysis and optimization
+-  **Data Upload**: Upload new data and view pre-loaded entities
+-  **Data Overview**: Interactive data exploration and visualization
+-  **Model Performance**: Compare forecasting model accuracy
+-  **Performance Analysis**: Computational cost analysis and optimization
 
 **Test Dashboard Functionality:**
 ```bash
@@ -227,7 +227,7 @@ python test_dashboard.py
 - **Technical Specifications**: `docs/technical_specs.md`
 - **IEEE Compliance Report**: `docs/ieee_compliance.md`
 - **Performance Analysis Guide**: `docs/performance_analysis.md`
-- **Dashboard Guide**: `DASHBOARD_GUIDE.md` (NEW!)
+- **Dashboard Guide**: `DASHBOARD_GUIDE.md` 
 
 ## Ethical Considerations
 - All data is anonymized and processed in sandbox environment
@@ -249,7 +249,7 @@ This project is licensed under the MIT License - see LICENSE file for details.
 ## Contact
 - **Author**: Kelsi Naidoo
 - **Institution**: University of Cape Town
-- **Email**: [Your Email]
+- **Email**: kelsi.naidoo@outlook.com
 - **Project**: MSc Engineering Thesis
 
 ## Version History
