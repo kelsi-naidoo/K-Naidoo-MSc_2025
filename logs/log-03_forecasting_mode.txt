@@ -1,0 +1,113 @@
+python notebooks/03_forecasting_models.py
+2025-07-01 19:13:36.251159: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING:tensorflow:From C:\Users\Kelsi\AppData\Roaming\Python\Python39\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+Script executed on: 2025-07-01 19:13:51
+Pandas version: 1.5.3
+NumPy version: 1.23.5
+TensorFlow available: True
+Processed data directory: data\processed
+Figures directory: reports\figures
+Reports directory: reports
+================================================================================
+CARBON EMISSIONS FORECASTING MODELS
+================================================================================
+
+============================================================
+PROCESSING ENTITY: EntityA
+============================================================
+
+Loading data for EntityA...
+Loaded features data: (101761, 31)
+Features: 26
+Target shape: (101761,)
+Date range: 2019-01-01 00:00:00 to 2025-01-01 00:00:00
+Time series data shape: (7,)
+Time series range: 2019-01-01 00:00:00 to 2025-01-01 00:00:00
+
+Training ARIMA model for EntityA...
+Started monitoring arima for EntityA
+ADF Statistic: 1.1738
+p-value: 0.9958
+Is stationary: False
+Applied differencing to make series stationary
+Training on 4 points, testing on 2 points
+ARIMA(1,1,0) - RMSE: 37388.8937, R²: 0.2173
+
+...
+
+Best model for EntityA: XGBOOST (RMSE: 17.8178, R²: 0.9597700964814553)
+
+Generating plots for EntityA...
+Saved figure: reports\figures\EntityA_forecasting_results.png
+Saved performance comparison figure: reports\figures\EntityA_performance_comparison.png
+Saved performance metrics: reports\EntityA_performance_metrics.csv
+
+============================================================
+PROCESSING ENTITY: EntityB
+============================================================
+
+Loading data for EntityB...
+Loaded features data: (66027, 32)
+Features: 27
+Target shape: (66027,)
+Date range: 2021-01-01 00:00:00 to 2025-01-01 00:00:00
+Time series data shape: (5,)
+Time series range: 2021-01-01 00:00:00 to 2025-01-01 00:00:00
+
+Training ARIMA model for EntityB...
+Started monitoring arima for EntityB
+ADF Statistic: 1.4390
+p-value: 0.9973
+Is stationary: False
+Applied differencing to make series stationary
+Training on 3 points, testing on 1 points
+ARIMA(1,1,0) - RMSE: 7894.0511, R²: nan
+
+...
+
+Best model for EntityB: XGBOOST (RMSE: 4.7816, R²: 0.9832867572178972)
+
+Generating plots for EntityB...
+Saved figure: reports\figures\EntityB_forecasting_results.png
+Saved performance comparison figure: reports\figures\EntityB_performance_comparison.png
+Saved performance metrics: reports\EntityB_performance_metrics.csv
+
+================================================================================
+FINAL SUMMARY
+================================================================================
+
+PERFORMANCE SUMMARY:
+----------------------------------------
+Performance Metrics:
+ Entity      Model  Execution_Time  Peak_Memory_MB  Peak_CPU_Percent         RMSE
+EntityA      ARIMA        0.683865      411.117188             403.1 37388.893718
+EntityA       LSTM       11.271875      519.792969             246.9    85.256788
+EntityA REGRESSION        0.199697      541.820312             145.5    57.639515
+EntityA    XGBOOST        2.379436      624.503906             193.4    17.817755
+EntityB      ARIMA        0.567293      712.144531             472.4  7894.051095
+EntityB       LSTM       10.595659      830.210938             258.4    45.380845
+EntityB REGRESSION        0.267618      733.960938             328.9    21.233230
+EntityB    XGBOOST        0.706910      724.585938             566.3     4.781562
+
+MODEL ACCURACY SUMMARY:
+----------------------------------------
+Best model for EntityA: XGBOOST (RMSE: 17.8178, R²: 0.9597700964814553)
+Best model for EntityB: XGBOOST (RMSE: 4.7816, R²: 0.9832867572178972)
+
+COMPUTATIONAL COST SUMMARY:
+----------------------------------------
+Total execution time: 26.67 seconds
+Peak memory usage: 830.2 MB
+Average peak CPU usage: 326.9%
+
+Cost Efficiency Analysis:
+Most cost-efficient model: XGBOOST (EntityB)
+  - RMSE: 4.7816
+  - Time: 0.71s
+  - Efficiency Score: 3.3801
+
+All results saved to: reports
+All figures saved to: reports\figures
+
+Forecasting models completed successfully!
