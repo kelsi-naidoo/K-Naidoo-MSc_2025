@@ -1,0 +1,89 @@
+python notebooks/05_net_zero_pathway.py
+   Starting Net Zero Pathway Analysis
+==================================================
+✅ Data loaded successfully
+Entity A: 101761 records
+Entity B: 66027 records
+✅ Added Date column to Entity A
+✅ Added Date column to Entity B
+
+   Analyzing Entity A
+------------------------------
+Base emissions (avg): 349,319 tCO2e
+Current trend: Annual change: -16951.5 tCO2e/year
+Current net zero year: 2043
+1.5°C Net Zero Year: 2050
+2°C Net Zero Year: 2050
+Carbon Budget Utilization: 0.00%
+
+   Analyzing Entity B
+------------------------------
+Base emissions (avg): 140,294 tCO2e
+Current trend: Annual change: -22294.7 tCO2e/year
+Current net zero year: 2030
+1.5°C Net Zero Year: 2050
+2°C Net Zero Year: 2050
+Carbon Budget Utilization: 0.00%
+
+   Creating Visualizations
+------------------------------
+Plotting 31 points for Entity A - 1.5°C
+Plotting 31 points for Entity A - 2°C
+Plotting 31 points for Entity B - 1.5°C
+Plotting 31 points for Entity B - 2°C
+✅ Main visualization saved successfully
+✅ Sector visualization saved for Entity A
+⚠️ More than 4 sectors found for Entity B. Only plotting top 4 by emissions.
+✅ Sector visualization saved for Entity B
+
+   Creating Combined Sector Comparison...
+✅ Combined sector comparison saved
+
+   Generating Analysis Tables
+------------------------------
+✅ Gap analysis table saved to reports/gap_analysis_table.csv
+✅ Pathway comparison table saved to reports/pathway_comparison_table.csv
+
+   Gap Analysis Summary:
+  Entity  Current_Net_Zero_Year  SBTi_1.5C_Net_Zero_Year  Gap_vs_1.5C_Years  Reduction_Needed_2030_1.5C
+Entity A                   2043                     2050                 -7                   24.227219
+Entity B                   2030                     2050                -20                    0.000000
+
+   Generating Report
+------------------------------
+✅ Report saved to reports/net_zero_pathway_report.md
+
+   Net Zero Pathway Analysis Complete!
+==================================================
+   Files generated:
+- reports/net_zero_pathway_analysis.png
+- reports/sector_pathways_Entity_A.png
+- reports/sector_pathways_Entity_B.png
+- reports/sector_comparison_combined.png
+- reports/gap_analysis_table.csv
+- reports/pathway_comparison_table.csv
+- reports/net_zero_pathway_report.md
+
+   Interactive Features Demonstration
+==================================================
+
+   Example Analysis for 349,319 tCO2e/year
+----------------------------------------
+
+1️⃣ Net Zero Year Calculator:
+   5% annual reduction → Net Zero by None
+   10% annual reduction → Net Zero by 2064
+   15% annual reduction → Net Zero by 2049
+   20% annual reduction → Net Zero by 2041
+
+2️⃣ Required Reduction Rate Calculator:
+   Net Zero by 2030 → 36.9% annual reduction required
+   Net Zero by 2040 → 20.6% annual reduction required
+   Net Zero by 2050 → 14.2% annual reduction required
+   Net Zero by 2060 → 10.9% annual reduction required
+
+3️⃣ SBTi Comparison:
+   1.5°C pathway: 2050
+   2°C pathway: 2050
+
+✅ Interactive features ready for dashboard integration!
