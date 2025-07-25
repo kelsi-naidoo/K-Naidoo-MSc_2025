@@ -1,0 +1,11 @@
+    sector                    property_name  scopes      emissions_source       class  emissions fiscalyear  is_correction  correction_amount  emissions_original
+    Office              DEVCON PLACE (1908) Scope 3       Municipal waste       Waste   0.000213 2019-01-01          False                0.0            0.000213
+    Office 3 THE BOULEVARD WESTVILLE (3584) Scope 3 Electricity generated Electricity  28.835306 2019-01-01          False                0.0           28.835306
+    Office       LINCOLN ON THE LAKE (1891) Scope 3          Water supply       Water   0.432900 2019-01-01          False                0.0            0.432900
+Industrial       DCD DORBYL BOKSBURG (3535) Scope 3          Water supply       Water   2.075700 2019-01-01          False                0.0            2.075700
+    Office 3 THE BOULEVARD WESTVILLE (3584) Scope 3 Electricity generated Electricity  27.198544 2019-01-01          False                0.0           27.198544
+    Office       LINCOLN ON THE LAKE (1891) Scope 3          Water supply       Water   0.436256 2019-01-01          False                0.0            0.436256
+Industrial       INDEPENDENCE SQUARE (3554) Scope 3          Water supply       Water   0.127650 2019-01-01          False                0.0            0.127650
+Industrial       DCD DORBYL BOKSBURG (3535) Scope 3          Water supply       Water   1.322750 2019-01-01          False                0.0            1.322750
+    Office 3 THE BOULEVARD WESTVILLE (3584) Scope 3 Electricity generated Electricity  25.194860 2019-01-01          False                0.0           25.194860
+Industrial       INDEPENDENCE SQUARE (3554) Scope 3          Water supply       Water   0.127400 2019-01-01          False                0.0            0.127400
