@@ -1,0 +1,83 @@
+python notebooks/04_anomaly_detection.py
+================================================================================
+ANOMALY DETECTION FOR CARBON EMISSIONS DATA
+================================================================================
+Analysis started: 2025-07-02 18:28:45
+
+Project: Carbon Emissions Forecasting System v3.0 v3.0.0
+Entities: ['EntityA', 'EntityB']
+
+Initializing anomaly detector...
+INFO:src.models.anomaly_detector:AnomalyDetector initialized
+✓ Anomaly detector initialized
+
+Loading cleaned data...
+INFO:src.models.anomaly_detector:Loaded cleaned data for EntityA: (101761, 11)
+INFO:src.models.anomaly_detector:Loaded cleaned data for EntityB: (66027, 12)
+✓ Loaded EntityA: 101761 rows, 11 columns
+✓ Loaded EntityB: 66027 rows, 12 columns
+
+==================================================
+PERFORMING ANOMALY DETECTION
+==================================================
+
+Analyzing EntityA...
+------------------------------
+INFO:src.models.anomaly_detector:Starting anomaly detection for EntityA
+...
+INFO:src.models.anomaly_detector:cblof: Found 0 anomalies (0.00%)
+
+Analyzing EntityB...
+------------------------------
+INFO:src.models.anomaly_detector:Starting anomaly detection for EntityB
+...
+INFO:src.models.anomaly_detector:cblof: Found 0 anomalies (0.00%)
+
+==================================================
+SAVING RESULTS
+==================================================
+✓ Results saved to reports directory
+✓ Report generated: reports\anomaly_report_20250702_183013.md
+
+==================================================
+GENERATING VISUALIZATIONS
+==================================================
+✓ Plots saved for EntityA
+✓ Plots saved for EntityB
+
+==================================================
+DETAILED ANOMALY ANALYSIS
+==================================================
+✓ Detailed report generated: reports\
+detailed_anomaly_analysis_EntityA_20250702_183047.md
+✓ Detailed report generated: reports\
+detailed_anomaly_analysis_EntityB_20250702_183047.md
+
+==================================================
+CROSS-ENTITY COMPARISON
+==================================================
+✓ Comparison plot saved: reports\anomaly_comparison_20250702_183047.png
+
+==================================================
+RECOMMENDATIONS
+==================================================
+1. HIGH PRIORITY:
+   - Investigate data points flagged by multiple algorithms
+   - Review periods with unusually high anomaly rates
+   - Validate data quality during high-anomaly periods
+
+2. MEDIUM PRIORITY:
+   - Analyze feature importance for anomaly detection
+   - Consider domain-specific anomaly thresholds
+   - Review seasonal patterns in anomaly detection
+
+3. LOW PRIORITY:
+   - Fine-tune algorithm parameters based on domain knowledge
+   - Implement real-time anomaly monitoring
+   - Create automated alerts for new anomalies
+
+================================================================================
+ANOMALY DETECTION COMPLETED
+================================================================================
+Analysis completed: 2025-07-02 18:30:50
+Check the reports directory for detailed results and visualizations.
